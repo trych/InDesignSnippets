@@ -1,2 +1,2 @@
 # InDesignSnippets
-Collection of some snippets useful for scripting in InDesign.
+Collection of some InDesign scripting snippets.
