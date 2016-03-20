@@ -1,6 +1,7 @@
 #target InDesign
 
-// this scripting template is useful for scripting outside of the ExtendScript editor, since it gives more meaningful error messages
+// this scripting template is useful for coding outside of the ExtendScript editor, since it gives more meaningful error messages
+// personally I use it to write ExtendScript code in Sublime Text
 
 function main () {
 
