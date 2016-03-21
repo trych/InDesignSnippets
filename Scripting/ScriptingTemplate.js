@@ -14,7 +14,7 @@ function main () {
     var errorAlert = (
       e.name + "\n" +
       "Message: " + e.message + "\n" +
-      "File: " + filePathToFileName(e.fileName) + "\n" +
+      "File: " + e.fileName + "\n" +
       "Line: " + e.line
       );
 
