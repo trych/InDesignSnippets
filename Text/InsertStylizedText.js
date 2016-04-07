@@ -1,7 +1,7 @@
 #target indesign
 
-// finds and alerts the x-position of the current insertion point
-// with elements from http://graphicdesign.stackexchange.com/a/48426/21771
+// inserts a string at the insertion point of a text frame and styles it with a character style
+// (in response to a question asked at http://graphicdesign.stackexchange.com/q/68712/21771)
 
 var insertString = "Inserted & stylized.";
 var insertCharacterStyle = app.activeDocument.characterStyles.item('InsertedText');
