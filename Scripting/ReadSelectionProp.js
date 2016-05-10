@@ -1,6 +1,6 @@
 #target InDesign
 
-// check if an object with a certain name exists in the active document
+// alerts the value of a given property of the first selected object
 
 var prop = "verticalScale";
 
