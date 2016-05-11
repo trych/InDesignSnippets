@@ -1,0 +1,4 @@
+InDesign Snippets To Do:
+
+ScriptingTemplate.js:
+  ☐ Check, if the "getUserSettings" step can be moved behind the checkRequirements step. Else the user settings are set and reset unneccessarily.
