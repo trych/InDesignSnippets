@@ -17,6 +17,11 @@ function main (doc) {
   // the main script goes here
 }
 
+//------------------------------------------------------------------------------
+// script functions
+//------------------------------------------------------------------------------
+
+// all functions that are not init functions or the main function go here
 
 //------------------------------------------------------------------------------
 // init functions
@@ -47,6 +52,19 @@ function init () {
   }
 }
 
+function checkRequirements(doc) {
+  // e.g. if a doc is required
+  if(!doc) {
+    alert("Error\nOpen a document first and try again.");
+    return false;
+  }
+
+  // add all other necessary requirements in the same pattern
+
+  // only if all requirements are met the function will return true
+  return true;
+}
+
 function getUserSettings(doc) {
   var userSettings = {};
 
@@ -65,24 +83,6 @@ function getUserSettings(doc) {
   return userSettings;
 }
 
-function checkRequirements(doc) {
-  // e.g. if a doc is required
-  if(!doc) {
-    alert("Error\nOpen a document first and try again.");
-    return false;
-  }
-
-  // add all other necessary requirements in the same pattern
-
-  // only if all requirements are met the function will return true
-  return true;
-}
-
-function setupPresets(doc) {
-  doc.viewPreferences.rulerOrigin = RulerOrigin.SPREAD_ORIGIN;
-  // set up more preferences if needed
-}
-
 function resetUserSettings(doc, userSettings) {
   app.scriptPreferences.userInteractionLevel = userSettings.userInteractionLevel;
 
@@ -93,4 +93,9 @@ function resetUserSettings(doc, userSettings) {
     doc.zeroPoint = userSettings.zeroPoint;
     doc.layoutWindows[0].transformReferencePoint = userSettings.tRPoint;
   }
+}
+
+function setupPresets(doc) {
+  doc.viewPreferences.rulerOrigin = RulerOrigin.SPREAD_ORIGIN;
+  // set up more preferences if needed
 }
